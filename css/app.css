@@ -1,7 +1,7 @@
 :root {
   --blanco: white;
   --negro: black;
-  --gris-4: rgba(255, 255, 255, 0.5);
+  --gris-4: rgba(255, 255, 255, 0.2);
   --blanco-7: rgba(255, 255, 255, 0.7);
   --negro-7: rgba(0, 0, 0, 0.5);
   --tipo-titular: "Playfair Display", serif;
@@ -12,10 +12,11 @@
   :root {
     --blanco: black;
     --negro: white;
-    --gris-4: rgba(0, 0,0, 0.5);
-    --blanco-7: rgba(0, 0,0, 0.7);
+    --gris-4: rgba(0, 0, 0, 0.5);
+    --blanco-7: rgba(0, 0, 0, 0.7);
     --negro-7: rgba(255, 255, 255, 0.5);
   }
+}
 
 * {
   margin: 0;
@@ -235,7 +236,7 @@ body {
   animation-delay: 0.2s;
 }
 .seccion .ul .a:hover {
-  border-color: white;
+  border-color: var(--blanco);
 }
 .seccion .h2 {
   font-family: var(--tipo-titular);
@@ -377,8 +378,8 @@ body {
 }
 
 #cursor {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   background-color: white;
   position: fixed;
   top: 0;
